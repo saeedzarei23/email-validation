@@ -6,46 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>form valdtion</title>
     <link rel="stylesheet" href="style.css" />
-    
   </head>
   <body>
     <div class="login-box">
       <header><h2>Send email</h2></header>
       <form id="form" class="user-box" action="">
-        <div class="user-box" id="email">
-          <input id="email"  type="text" required=""/>
+        <div class="user-box" id="email1">
+          <input id="email" type="email" />
           <label>Email</label>
         </div>
         <div class="user-box">
-          <input id="subject"  type="text" required="" />
+          <input id="subject" type="text" />
           <label>subject</label>
         </div>
         <div class="user-box">
-          <input id="discription"  type="text"required="" />
+          <input id="discription" type="text" />
           <label>discription</label>
         </div>
         <div class="btn">
-            <button id="send">
-                <span></span>
+          <button id="send">
             <span></span>
             <span></span>
-            <span></span>send</button>
-            <button id="rest">
-                <span></span>
+            <span></span>
+            <span></span>send
+          </button>
+          <button id="rest">
+            <span></span>
             <span></span>
             <span></span>
             <span></span>rest
             <i class="material-icons right"></i>
-        </button>
+          </button>
         </div>
-
-       
+        <div class="box">
+        <ul id="error-list"></ul>
+        </div>
       </form>
-
     </div>
-    <!-- <div class="errors">
-      <ul id="error list"></ul>
-    </div> -->
     <script src="app.js"></script>
   </body>
 </html>

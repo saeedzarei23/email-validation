@@ -58,6 +58,20 @@ label {
   color: #03e9f4;
   font-size: 12px;
 }
+input:focus ~ label,
+ input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+input[type="email"]:focus ~ label,
+input[type="email"]:valid ~ label{
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
 button {
   background-color: transparent;
   border: none;
@@ -168,14 +182,14 @@ span:nth-child(4) {
     align-items: center;
     justify-content: space-between;
 }
-.errors{
-  background: rgba(0, 0, 0, 0.5);
+#error-list{
+
   box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6); */
+  list-style: none;
+
+}
+#error-list li {
+  color:  #03e9f4;
+  padding: 7px;
 }
